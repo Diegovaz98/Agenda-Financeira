@@ -1,8 +1,28 @@
-.marcador{
-	background: blue;
-	border: 1px solid red;
+.back-top{
+  background: url(imagens/images.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  height: 18em;
 }
-.marcador2{
-	background: green;
-	border: 1px solid red;
+#prag1{
+	margin: 0;
+	padding-top: 40px;
+}
+.retangulo{
+	width: 250px;
+	height: 30px;
+	background: red;
+	grid-auto-columns: column;
+	padding: 6px;
+	margin-bottom: 10px;
+}
+.altura-box{
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
