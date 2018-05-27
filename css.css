@@ -12,7 +12,7 @@
 	padding-top: 40px;
 }
 .retangulo{
-	width: 250px;
+	width: 270px;
 	height: 30px;
 	background: red;
 	grid-auto-columns: column;
@@ -27,9 +27,11 @@
   flex-direction: column;
 }
 .menu{
+	display: flex;
 	padding: 10px;
 	background-color: #d9dbe0;
-	text-align: center;
+	justify-content: center;
+
 }
 .select-op{
 
@@ -50,4 +52,21 @@
 .tabela1{
 	width: 45%;
 	margin-right: 40px;
+}
+.img{
+	background-color: #d9dbe0;
+	width: 26px;
+	height: 26px;
+}
+button{
+	border-style: none;
+	background-color: #d9dbe0;
+}
+.padding{
+	padding-left: 10px;
+}
+.mostra-quantia{
+	background-color: transparent;
+	border-style: none;
+	border: none;
 }

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script language="javascript" src="javascript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Agenda Financeira</title>
-
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
@@ -25,36 +25,42 @@
 
             <h1 id="prag1" >Agenda Financeira</h1>
             
-            <h3>R$ 10,00</h3>
+            <h3>R$  <input id="teste" type="text" class="mostra-quantia"></h3>
 
           </div>  
           
           <div class="altura-box">
 
               <div style="background: green" class="retangulo">
-                INCOME<span class="pull-right"> +10.00</span>
+                INCOME <input id="income" type="text" class="pull-right mostra-quantia">
               </div>
         
               <div class="retangulo">
-                EXPENSES <span class="pull-right"> -10.00</span>
+                EXPENSES <input id="expenses" type="text" class="pull-right mostra-quantia">
               </div>
 
           </div>
     
     </div>
     <div class="menu">
-      <select class="select-op" name="buscadores" id="buscadores">
-        <option>-</option>  
-        <option>+</option>
-      </select>
+      <div>
+        <select id="op" class="select-op" name="buscadores" id="buscadores">
+          <option value="1">-</option>  
+          <option value="2">+</option>
+        </select>
+      </div>
 
-      <input type="text" name="" placeholder="descripition">
+      <div class="padding">
+       <input type="text" id="description" placeholder="description" style="width: 11em "> 
+      </div>
 
-
-      <input type="number" name="" placeholder="value" class="value">
+      <div class="padding">
+        <input id="valor" type="number" name="" placeholder="value" class="value">
+      </div>
       
-      <a href=""><img src="imagens/download.png" width="26px" height="25px"> </a>
-
+      <div class="padding">
+        <button onclick="calcular()" ><img src="imagens/download.png" width="26px" height="26px"></button>
+      </div>
     </div>
 
     <div class="container tabela">
@@ -66,6 +72,9 @@
               <th style="color: green">INCOME</th>
             </tr>
           </thead>
+          <tbody id="INCOME">
+            
+          </tbody>
         </table>
       </div>
 
@@ -76,12 +85,18 @@
               <th style="color: red">EXPENSES</th>
             </tr>
           </thead>
+          <tbody id="EXPENSES">
+
+            
+          </tbody>
         </table>
       </div>
 
     </div>
 
-
+    <script type="text/javascript">
+      document.getElementById('teste').value= '0';
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
