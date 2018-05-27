@@ -26,3 +26,28 @@
   align-items: center;
   flex-direction: column;
 }
+.menu{
+	padding: 10px;
+	background-color: #d9dbe0;
+	text-align: center;
+}
+.select-op{
+
+   background: white;
+   padding-left: 8px;
+   width: 40px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+   height: 26px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+   border: 1px solid #bab9b4;
+}
+.value{
+	width: 80px;
+}
+.tabela{
+	margin-top: 40px;
+	display: flex;
+	width: 80%;
+}
+.tabela1{
+	width: 45%;
+	margin-right: 40px;
+}
